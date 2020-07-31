@@ -1,0 +1,25 @@
+.info {
+  border-radius: 2px;
+  /* margin-right: 200px;
+  margin-left: 200px; */
+  background-color: white;
+  display: grid;
+  min-width:720px;
+  max-width:720px;
+  min-height: 450px;
+  max-height: 450px;
+  grid-template:
+    "image name . editorsChoice" 60px
+    "image author category rating" 30px
+    "image . . ." 40px
+    "image ads ads ." 50px
+    "image wishlist . install-button" 40px
+    "add-info add-info add-info add-info" 160px
+    / 31% 16% 16% 34%;
+}
+
+
+
+      <div className='greenline'>      <span className='author'>Cranjis McBasketball</span>
+      <span className='category'> Productivity</span>
+      <span className='everyone'><img src='https://icons-987654321.s3-us-west-1.amazonaws.com/everyone-rating.png'></img></span></div>

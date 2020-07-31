@@ -32,7 +32,7 @@ const Rating = function(props) {
           </span>
         )}
       </span>
-     {props.ratings} <img className='personLogo' src='https://banner2.cleanpng.com/20180509/klq/kisspng-person-logo-computer-icons-5af2c2026fcf79.460327751525858818458.jpg'></img>
+     63,588 <img className='personLogo' src='https://banner2.cleanpng.com/20180509/klq/kisspng-person-logo-computer-icons-5af2c2026fcf79.460327751525858818458.jpg'></img>
     </div>
   )
 }

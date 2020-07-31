@@ -206,11 +206,13 @@ h1 {
     "image name . editorsChoice" 60px
     "image author category rating" 30px
     "image . . ." 40px
-    "image ads ads ." 50px
+    "image ads ads ads" 50px
     "image wishlist . install-button" 40px
     "add-info add-info add-info add-info" 160px
     / 31% 16% 16% 34%;
 }
+
+
 
 .add-info {
   grid-area: add-info;
@@ -255,7 +257,7 @@ h1 {
   grid-area: author;
   justify-self: start;
   align-self: center;
-  font-weight: 700;
+  font-weight: 710;
   color: #33691e;
   font-family: 'Roboto', sans-serif;
   font-size:13px;
@@ -270,7 +272,7 @@ h1 {
 
 .category {
   grid-area: category;
-  font-weight: 700;
+  font-weight: 710;
   color: #33691e;
   font-family: 'Roboto', sans-serif;
   font-size:13px;
