@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "build": "webpack -d --watch",
-    "db:setup": "node database/seed.js",
+    "dseedp": "node database/seed.js",
     "test": "jest",
     "build:scss": "webpack --mode production --config webpack.scss.config.js && rm ./dist/styles.js ./dist/lettering.js ./dist/captioned.js",
     "build:website": "webpack --mode production --config webpack.website.config.js",
