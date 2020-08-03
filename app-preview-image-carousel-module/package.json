@@ -1,7 +1,7 @@
 {
   "name": "app-preview-info-carousel",
   "description": "> This module includes the image carousel including various views of each app as well as the app description paragraph(s)",
-  "author": "",
+  "author": "Mason Borchard",
   "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
