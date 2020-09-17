@@ -1,9 +1,10 @@
-const mongoose = require('mongoose');
-// const db = require('../database');
-mongoose.connect('mongodb://localhost/googleplay', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-const db = mongoose.connection;
+const mongoose = require("mongoose");
+const mongoUri = "mongodb://localhost/img_carousel";
 
- module.exports = db;
+const db = mongoose.connect(mongoUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
+
+module.exports = db;
