@@ -1,15 +1,12 @@
-const mongoose = require('mongoose');
-const db = require('./index.js');
+const mongoose = require("mongoose");
+const db = require("./index.js");
 
 const carouselSchema = new mongoose.Schema({
   id: { type: Number, unique: true },
   app_description: String,
   additional_text: String,
-  images: Array
+  images: Array,
 });
-
-const Carousels = mongoose.model( 'Carousel', carouselSchema );
-
 
 // findAll retrieves all appimages data
 function findAll(callback) {
@@ -20,7 +17,6 @@ function findAll(callback) {
 function findOne(id, callback) {
   Carousels.find({ id: id }, callback);
 }
-// db.find({ id: id })
 
 // insertOne inserts one appImages schema into db
 function insertOne(schema, callback) {
@@ -32,9 +28,5 @@ function getApps(id, callback) {
   Carousels.find({ "by.id": id }, callback);
 }
 
-
-exports.findOne = findOne;
-exports.findAll = findAll;
-exports.insertOne = insertOne;
-exports.Carousels = Carousels;
+const Carousels = mongoose.model("Carousels", carouselSchema);
 module.exports = Carousels;
