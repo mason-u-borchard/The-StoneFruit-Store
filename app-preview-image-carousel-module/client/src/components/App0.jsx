@@ -2,7 +2,8 @@ import React from "react";
 import axios from "axios";
 import Collapsible from "react-collapsible";
 import ImageCarousel from "./ImageCarousel.jsx";
-import DropDown from "./Collapsible.jsx";
+import DropDown from "./DropDown.jsx";
+import Description from "./Description.jsx";
 
 class App0 extends React.Component {
   constructor(props) {
@@ -47,9 +48,7 @@ class App0 extends React.Component {
       <div className="carouselContents">
         <ImageCarousel id={this.props.id} />
         <div className="container-carousel-service">
-          <p className="description-text" style={{ marginTop: "5px" }}>
-            {this.state.currentApp.app_description}{" "}
-          </p>
+          <Description currentApp={this.state.currentApp} />
           <DropDown
             currentApp={this.state.currentApp}
             readMore={this.state.readMore}

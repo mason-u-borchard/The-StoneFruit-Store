@@ -11,6 +11,7 @@
     "build": "webpack -d --watch",
     "seed": "node database/seed.js",
     "test": "jest",
+    "less": "lessc  ./client/dist/style.less > ./client/dist/style.css",
     "build:scss": "webpack --mode production --config webpack.scss.config.js && rm ./dist/styles.js ./dist/lettering.js ./dist/captioned.js",
     "build:website": "webpack --mode production --config webpack.website.config.js",
     "build:animations": "babel-node ./scss-builder.js"

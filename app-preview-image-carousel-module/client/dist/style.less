@@ -1,3 +1,5 @@
+@info-green: #33691e;
+
 body {
   background-color: lightgrey;
 }
@@ -29,17 +31,22 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-#feature,
-#addText1,
-#addText2,
-#addText3 {
+#dropdown-text() {
   line-height: 19.5px;
   padding: 0px 0px 0px 0px;
   margin-left: 15px;
 }
 
+#addText0,
+#addText1,
+#addText2,
+#addText3,
+#addText4 {
+  #dropdown-text;
+}
+
 .Collapsible__trigger {
-  color: #33691e;
+  color: @info-green;
   position: relative;
   right: 100px;
   left: 250px;
@@ -51,6 +58,14 @@ body {
   font-weight: 800;
   font-stretch: expanded;
   text-size-adjust: 100%;
+}
+
+.Collapsible__trigger is-open {
+  .Collapsible__trigger();
+}
+
+.Collapsible__trigger is-closed {
+  .Collapsible__trigger();
 }
 
 .chevron-arrow-left {

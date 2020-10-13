@@ -1,3 +1,5 @@
+@info-green: #33691e;
+
 /* page layout */
 
 #similar {
@@ -45,8 +47,8 @@
 }
 
 /* #images {
-  margin-top: 1cm;
-} */
+    margin-top: 1cm;
+  } */
 
 #review-container {
   -webkit-box-shadow: 2px 1px rgb(173, 173, 173), -2px 0 1px rgb(175, 175, 175);
@@ -63,14 +65,14 @@
   justify-self: start;
   align-self: start;
   /*
-  display: grid;
-
-  min-height: 1000px;
-  justify-self: start;
-  grid-area: review;
-  align-self: start;
-  min-width:720px;
-  max-width:720px; */
+    display: grid;
+  
+    min-height: 1000px;
+    justify-self: start;
+    grid-area: review;
+    align-self: start;
+    min-width:720px;
+    max-width:720px; */
 }
 #all-content {
   display: grid;
@@ -99,8 +101,8 @@
 .description-text {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  color: #555454;
-  background: #fff;
+  color: rgb(85, 84, 84);
+  background: white;
   display: block;
   margin-top: 0cm;
   font-size: 14px;
@@ -112,45 +114,18 @@
   margin-left: 15px;
   text-rendering: optimizeLegibility;
 }
-#addText0,
+
+#feature,
 #addText1,
 #addText2,
-#addText3,
-#addText4 {
+#addText3 {
   line-height: 19.5px;
   padding: 0px 0px 0px 0px;
   margin-left: 15px;
 }
+
 .Collapsible__trigger {
-  color: #33691e;
-  position: relative;
-  right: 100px;
-  left: 250px;
-  transition: "background" 0.2s 0.1s;
-  cursor: pointer;
-  text-align: center;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  font-stretch: expanded;
-  text-size-adjust: 100%;
-}
-.Collapsible__trigger is-open {
-  color: #33691e;
-  position: relative;
-  right: 100px;
-  left: 250px;
-  transition: "background" 0.2s 0.1s;
-  cursor: pointer;
-  text-align: center;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  font-stretch: expanded;
-  text-size-adjust: 100%;
-}
-.Collapsible__trigger is-closed {
-  color: #33691e;
+  color: @info-green;
   position: relative;
   right: 100px;
   left: 250px;
@@ -203,7 +178,7 @@ h1 {
 .info {
   border-radius: 2px;
   /* margin-right: 200px;
-  margin-left: 200px; */
+    margin-left: 200px; */
   background-color: white;
   display: grid;
   min-width: 720px;
@@ -265,7 +240,7 @@ h1 {
   justify-self: start;
   align-self: center;
   font-weight: 710;
-  color: #33691e;
+  color: @info-green;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
 }
@@ -280,7 +255,7 @@ h1 {
 .category {
   grid-area: category;
   font-weight: 710;
-  color: #33691e;
+  color: @info-green;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   align-self: center;
@@ -329,7 +304,7 @@ h1 {
 
 .wishlist {
   grid-area: wishlist;
-  color: #33691e;
+  color: @info-green;
   align-self: center;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
@@ -366,7 +341,7 @@ h1 {
 .wishlistLogo {
   height: 16px;
   width: 16px;
-  color: #33691e;
+  color: @info-green;
 }
 
 .title {
@@ -378,9 +353,9 @@ h1 {
 /* similar apps */
 
 /* * {
-  box-sizing: border-box;
-  color: #333;
-} */
+    box-sizing: border-box;
+    color: #333;
+  } */
 
 .similar-apps {
   background-color: whitesmoke;
