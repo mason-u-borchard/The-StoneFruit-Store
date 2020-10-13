@@ -9,11 +9,11 @@ body {
   align-content: center;
   padding: 25px 5px 25px 5px;
   width: 650px;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
 .description-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
   color: rgb(85, 84, 84);
   background: #fff;
@@ -38,42 +38,28 @@ body {
   margin-left: 15px;
 }
 
-/* #addText3 {
-  margin-bottom: 2cm;
-} */
-
-#readmore {
-  color: green;
-}
-
-#feature {
-  padding: 17px 0px 17px 0px;
-}
-
-
-
-
-#readmore {
+.Collapsible__trigger {
   color: #33691e;
-  transition: 'background' .2s .1s;
+  position: absolute;
+  right: 0;
+  left: 0;
+  transition: "background" 0.2s 0.1s;
   cursor: pointer;
   text-align: center;
-  font-family: Arial, sans-serif;
-  font-size:14px;
-  font-weight: 450;
-  font-stretch: condensed;
-  text-size-adjust:100%;
-
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: expanded;
+  text-size-adjust: 100%;
 }
-
-
 
 .chevron-arrow-left {
   cursor: pointer;
   display: inline-block;
   border-right: 2px solid rgb(134, 130, 130);
   border-bottom: 2px solid rgb(134, 130, 130);
-  width: 12px; height: 12px;
+  width: 12px;
+  height: 12px;
   transform: rotate(-225deg);
 }
 
@@ -82,10 +68,10 @@ body {
   display: inline-block;
   border-right: 2px solid rgb(134, 130, 130);
   border-bottom: 2px solid rgb(134, 130, 130);
-  width: 12px; height: 12px;
+  width: 12px;
+  height: 12px;
   transform: rotate(-45deg);
 }
-
 
 .chevron-arrow-left:hover,
 .chevron-arrow-right:hover {

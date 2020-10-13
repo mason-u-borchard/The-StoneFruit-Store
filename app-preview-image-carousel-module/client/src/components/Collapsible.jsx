@@ -3,9 +3,11 @@ import React from "react";
 import Collapsible from "react-collapsible";
 
 const DropDown = (props) => {
-  console.log("props dropdown", props);
-  const additionalText = props.currentApp;
-  console.log("currentApp", additionalText);
+  var additionalText = "one\ntwo\nthree\nfour\nfive";
+  if (props.currentApp.additional_text) {
+    additionalText = props.currentApp.additional_text;
+  }
+
   return (
     <div>
       <Collapsible
@@ -18,7 +20,7 @@ const DropDown = (props) => {
           cursor: "pointer",
           gridArea: "readMore",
           gridTemplate: "feature text1 text2 text3 readmore",
-          color: "green",
+          color: "#33691e",
           justifyContent: "center",
           alignText: "center",
           fontfamily: "Arial",
@@ -26,7 +28,9 @@ const DropDown = (props) => {
         onOpening={props.toggleAdditionalText}
         onClosing={props.toggleAdditionalText}
       >
-        {props.readMore}
+        <br></br>
+        <br></br>
+        {additionalText.split("\n")[0]}
 
         <p
           className="description-text"
@@ -36,17 +40,17 @@ const DropDown = (props) => {
             gridArea: "feature",
           }}
         >
-          {additionalText[0]}
+          {additionalText.split("\n")[1]}
         </p>
         <p
           className="description-text"
-          id="text1"
+          id="addText1"
           style={{
             display: "grid",
             gridArea: "text1",
           }}
         >
-          {additionalText[1]}
+          {additionalText.split("\n")[2]}
         </p>
         <p
           className="description-text"
@@ -56,7 +60,7 @@ const DropDown = (props) => {
             gridArea: "text2",
           }}
         >
-          {additionalText[2]}
+          {additionalText.split("\n")[3]}
         </p>
         <p
           className="description-text"
@@ -66,7 +70,7 @@ const DropDown = (props) => {
             gridArea: "text3",
           }}
         >
-          {additionalText[3]}
+          {additionalText.split("\n")[4]}
         </p>
       </Collapsible>
     </div>
